@@ -5,6 +5,7 @@ import Dashboard from './layout/Dashboard';
 import Login from "./layout/Login";
 import FundamentoUseEffect from "./paginas/FundamentoUseEffect";
 import FundamentoUseState from "./paginas/FundamentoUseState";
+import FundamentoUseContext from "./paginas/FundamentoUseContext";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/fundamentos" element={<Dashboard />}>
           <Route path="usestate" element={<FundamentoUseState />} />
           <Route path="useffect" element={<FundamentoUseEffect />} />
+          <Route path="usecontext" element={<FundamentoUseContext />} />
         </Route>
       </Routes>
     </HashRouter>

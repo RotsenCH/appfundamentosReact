@@ -1,7 +1,8 @@
-import { useNavigate } from "react-router-dom";
+//Pasos para usar el use navigate
+import { useNavigate } from "react-router-dom";//Paos 1 la importacion
 
 const FormularioLogin = () => {
-
+    //Utilizan la funcion
     const navigate = useNavigate()
 
     return (
@@ -64,6 +65,7 @@ const FormularioLogin = () => {
                     </div>
 
                     <div className="mt-6">
+                        {/* Ejecutar */}
                         <button
                             onClick={() => navigate("/fundamentos")}
                             className="w-full inline-flex items-center justify-center px-4 py-2 bg-sky-900 border border-transparent rounded-md font-semibold capitalize text-white hover:bg-sky-700 active:bg-sky-700 focus:outline-none focus:border-sky-700 focus:ring focus:ring-sky-200 disabled:opacity-25 transition">

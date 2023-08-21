@@ -1,7 +1,8 @@
+// 1. Importar el useLocation de react-router-dom
 import { Link, Outlet, useLocation } from 'react-router-dom'
 
 const Dashboard = () => {
-
+    // 2. Inicializar la useLocation en la variable location
     const location = useLocation()
     const urlActual = location.pathname
 
@@ -13,11 +14,11 @@ const Dashboard = () => {
                     <Link to='/fundamentos/usestate' className={`${urlActual === '/fundamentos/usestate' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>useState</Link>
 
                     <Link to='/fundamentos/useffect' className={`${urlActual === '/fundamentos/useffect' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>useEffect</Link>
+                    
+                    <Link to='/fundamentos/usecontext' className={`${urlActual === '/fundamentos/usecontext' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>useContext</Link>
 
                     <Link to='/' className=" text-white text-2xl block mt-4 hover:text-red-300 text-center bg-red-900 p-1 rounded-lg">Salir</Link>
-
                 </nav>
-
             </div>
             <div className='md:w-3/4 p-10 md:h-screen overflow-y-scroll'>
                 <Outlet />
